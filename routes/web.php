@@ -13,6 +13,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// ===========================
+// ROUTING UNTUK LIEL KRISTEN
+// ===========================
+Route::get('/admin', function () {
+    return view('admin.contoh');
+});
+
+// ===========================
+// ROUTING UNTUK DAVID ISLAM
+// ===========================
 Route::get('/', function () {
-    return view('welcome');
 });
