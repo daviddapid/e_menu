@@ -24,4 +24,12 @@ Route::get('/admin', function () {
 // ROUTING UNTUK DAVID ISLAM
 // ===========================
 Route::get('/', function () {
-});
+    return view('client.home');
+})->name('home');
+Route::get('/detail-{product:name}', function () {
+    return view('client.detail');
+})->name('detail');
+
+Route::get('/cart', function () {
+    return view('client.cart');
+})->name('cart');
